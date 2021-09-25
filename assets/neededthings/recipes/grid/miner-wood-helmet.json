@@ -1,0 +1,20 @@
+[
+{
+	ingredientPattern:
+	
+	"RAR,QLQ,_K_",
+	
+	//requiresTrait: "miner","commoner",
+	
+	ingredients: {
+		"A": { type: "item", code: "game:axe-*", isTool: true, toolDurabilityCost: 12 },
+		"K": { type: "item", code: "game:knife-*", isTool: true, toolDurabilityCost: 12 },
+		"L": { type: "block", code: "game:log-*", quantity: 2 },
+		"Q": { type: "item", code: "game:ore-quartz" },
+		"R": { type: "item", code: "game:resin", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "miner-wood-helmet", quantity: 1  }
+}
+]

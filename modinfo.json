@@ -1,0 +1,16 @@
+{
+  "type": "content",
+  "modid": "neededthings",
+  "name": "Needed Things",
+  "authors": [ "KaEv" ],
+  "description": "Needed Things",
+  "website": "https://www.twitch.tv/kaev_i",
+  "website": "https://github.com/kaev-i/",
+  
+    "version": "1.0.0",
+	"RequiredOnClient": true,
+    "RequiredOnServer": true,
+  "dependency": {
+    "game": ""
+  }
+   }

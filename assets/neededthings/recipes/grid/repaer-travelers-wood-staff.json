@@ -1,0 +1,21 @@
+[
+{
+	ingredientPattern:
+	
+	"_QR,AL_,_KS",
+	
+	//requiresTrait: "",
+	
+	ingredients: {
+		"A": { type: "item", code: "game:axe-*", isTool: true, toolDurabilityCost: 12 },
+		"K": { type: "item", code: "game:knife-*", isTool: true, toolDurabilityCost: 12 },
+		"L": { type: "block", code: "game:log-*", quantity: 1 },
+		"Q": { type: "item", code: "game:ore-quartz", quantity: 1 },
+		"S": { type: "item", code: "neededthings:travelers-wood-staff", quantity: 1 },
+		"R": { type: "item", code: "game:resin", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "travelers-wood-staff", quantity: 1  }
+}
+]

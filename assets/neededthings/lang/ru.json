@@ -1,0 +1,22 @@
+{
+	"game:tabname-neededthings": "Needed Things",
+	
+	//Staff
+	"item-travelers-wood-staff": "Деревянный Посох",
+	"item-travelers-copper-staff": "Медный Посох",
+	"item-travelers-iron-staff": "Железный Посох",
+	"item-travelers-steel-staff": "Стальной Посох",
+	"item-travelers-titan-staff": "Титановый Посох",
+	
+	//Helmet
+	"item-miner-wood-helmet": "Деревянная Каска",
+	"item-miner-copper-helmet": "Медная Каска",
+	"item-miner-iron-helmet": "Железная Каска",
+	"item-miner-steel-helmet": "Стальная Каска",
+	"item-miner-titan-helmet": "Титановая Каска",
+	"item-witch": "Ведьмин Колпак",
+	
+	//Fuel
+	"item-hitempfuel": "Высокотемпературное Топливо"
+
+}

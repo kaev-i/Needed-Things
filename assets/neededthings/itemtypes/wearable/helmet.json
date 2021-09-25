@@ -1,0 +1,94 @@
+{
+	code: "miner",
+	class: "ItemWearable",
+			
+	variantgroups: [
+		{ code: "type",  "states": ["wood","copper","iron","steel","titan"] },
+		{ code: "subtype", "states": [ "helmet" ] },
+	],
+	shape: { base: "item/helmets/miner-{type}-{subtype}" },
+	glowLevel: 20,
+	storageFlags: 128,
+	
+	attributes: {
+			//itemlight: [0, 0, 16],
+			rackable: true,
+			toolrackTransform: {
+			translation: { x: 0.6, y: 0.6, z: 0.7 },
+			rotation: { x: 180, y: -90, z: 0 },
+			origin: { x: 0, y: 0, z: 0 }
+		},
+			wearableAttachment: true,
+			disableElements: ["Hair tile upper part", "Ponytail1", "Hair", "hideme"],
+			clothescategory: "armorhead",
+			handbook: { groupBy: ["miner-*"] },
+			warmth: 0.25,
+		
+		
+		statModifiersByType: {
+			"miner-*-helmet": {
+				walkSpeed: 0.25,
+				hungerrate: -.15,
+				//rangedWeaponsSpeed: 0.5,
+				//rangedWeaponsAcc: 0.5
+			}
+		},		
+	},	
+
+		
+	textures: {
+		"seraph": { base: "game:block/transparent" }
+	},		
+		
+	miningspeedByType: {
+		"*-wood-*": { "soil": 2,"sand": 2,"gravel": 2,"stone": 2,"metal": 2,"ore": 2 },
+		"*-copper-*": { "soil": 3,"sand": 3,"gravel": 3,"stone": 3,"metal": 3,"ore": 3 },
+		"*-iron-*": { "soil": 4,"sand": 4,"gravel": 4,"stone": 4,"metal": 4,"ore": 4 },
+		"*-steel-*": { "soil": 7,"sand": 7,"gravel": 7,"stone": 7,"metal": 7,"ore": 7 },
+		"*-titan-*": { "soil": 9,"sand": 9,"gravel": 9,"stone": 9,"metal": 9,"ore": 9 },
+	},		
+	
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "neededthings":["*"] },
+	renderAlphaTest: 0.25,
+	//blockmaterial: "Metal",
+	//glow:250,
+	//lightAbsorption: 0,
+	//lightHsv: [ 8, 4, 30 ],
+	
+		
+	durabilityByType: {
+		"*-wood-*": 350,
+		"*-copper-*": 350,
+		"*-iron-*": 650,
+		"*-steel-*": 1500,
+		"*-titan-*": 3500
+	},
+	
+		guiTransform: {
+		translation: { x: -5, y: -4, z: 0 },
+		rotation: { x: 180, y: -54, z: 2 },
+		origin: { x: 1, y: 2, z: 1 },
+		scale: 2.05
+	
+		
+	},
+	tpHandTransform: {
+		translation: { x: -0.8, y: -2.7, z: -0.9 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0.5, z: 0.5 },
+		scale: 0.55
+	},	
+		groundTransform: {
+		translation: { x: 0, y: -1.6, z: -1 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 4.58
+	},
+	fpHandTransform: {	
+		translation: { x: 0.08, y: -0.21, z: -0.5 },
+		rotation: { x: -2, y: -5, z: 21 },
+		origin: { x: 5, y: 2, z: 5 },
+		scale: 1.93
+	}	
+		
+}

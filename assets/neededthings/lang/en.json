@@ -1,0 +1,23 @@
+{
+	"game:tabname-neededthings": "Needed Things",
+	
+	//Staff
+	"item-travelers-wood-staff": "Wood Staff",
+	"item-travelers-copper-staff": "Copper Staff",
+	"item-travelers-iron-staff": "Iron Staff",
+	"item-travelers-steel-staff": "Steel Staff",
+	"item-travelers-titan-staff": "Titan Staff",
+	
+	//Helmet
+	"item-miner-wood-helmet": "Wood Helmet",
+	"item-miner-copper-helmet": "Copper Helmet",
+	"item-miner-iron-helmet": "Iron Helmet",
+	"item-miner-steel-helmet": "Steel Helmet",
+	"item-miner-titan-helmet": "Titan Helmet",
+	"item-witch": "The Witch's Hat",
+
+	//Fuel
+	"item-hitempfuel": "High Temperature Fuel"
+	
+	
+}

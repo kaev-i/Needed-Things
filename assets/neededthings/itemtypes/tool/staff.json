@@ -1,0 +1,81 @@
+{	
+	code: "travelers",
+	class: "ItemSword",
+	
+	
+	variantgroups: [
+		{ code: "type",  "states": ["wood","copper","iron","steel","titan"] },
+		{ code: "subtype", "states": [ "staff" ] },
+	],
+	
+	shape: { base: "item/tool/travelers-{type}-{subtype}" },
+	heldTpHitAnimation: "breaktool",
+	
+	attackRange: 3,
+	attributes: {
+			itemlight: [33, 6, 18],
+			toolrackTransform: {
+			translation: { x: 0.5, y: 0.5, z: 0 },
+			origin: { x: 5, y: 5, z: 5 }
+	},
+	
+		
+		rackable: true,
+		handbook: {
+			groupBy: ["*-staff"] },
+		},
+	
+			
+	statModifiersByType: {
+			"travelers-*-*": {
+				walkSpeed: 0.2,
+				hungerrate: -0.2
+			}
+		},
+	tool: "sword",
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "neededthings":["*"] },
+	renderAlphaTest: 0.25,
+	
+	damagedby: ["blockbreaking", "attacking"],
+			
+	durabilityByType: {
+		"*-wood-*": 350,
+		"*-copper-*": 750,
+		"*-iron-*": 1500,
+		"*-steel-*": 3500,
+		"*-titan-*": 7500
+	},
+	
+		attackpowerbytype: {
+		"*-wood-*": 4,
+		"*-copper-*": 6,
+		"*-iron-*": 9,
+		"*-steel-*": 13,
+		"*-titan-*": 17,
+	},
+	
+		
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -89, y: 47, z: 33 },
+		origin: { x: 0.59, y: 0, z: 0.44 },
+		scale: 1.75
+	},
+	fpHandTransform: {
+		translation: { x: -0.2, y: -0.2, z: 0 },
+		rotation: { x: 15, y: 15, z: 90 },
+		scale: 2.45
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.4
+	},
+	tpHandTransform: {
+		translation: { x: -0.87, y: -0.01, z: -0.56 },
+		rotation: { x: -81, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 0.8
+	}
+}

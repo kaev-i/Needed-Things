@@ -1,0 +1,21 @@
+[
+{
+	ingredientPattern:
+	
+	"SQR,HT_,_K_",
+	
+	//requiresTrait: "",
+	
+	ingredients: {
+		"S": { type: "item", code: "neededthings:travelers-wood-staff", quantity: 1 },
+		"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 12 },
+		"K": { type: "item", code: "game:knife-*", isTool: true, toolDurabilityCost: 12 },
+		"T": { type: "item", code: "game:metalplate-steel", quantity: 4 },
+		"Q": { type: "item", code: "game:ore-quartz", quantity: 2 },
+		"R": { type: "item", code: "game:resin", quantity: 2 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "travelers-steel-staff", quantity: 1  }
+}
+]

@@ -1,0 +1,21 @@
+[
+{
+	ingredientPattern:
+	
+	"THT,QEQ,SK_",
+	
+	//requiresTrait: "miner","commoner",
+	
+	ingredients: {
+		"S": { type: "item", code: "neededthings:miner-wood-helmet", quantity: 1 },
+		"H": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 12 },
+		"Q": { type: "item", code: "game:ore-quartz", quantity: 1 },
+		"E": { type: "item", code: "game:hide-*", quantity: 2 },
+		"T": { type: "item", code: "game:metalplate-copper", quantity: 2 },
+		"K": { type: "item", code: "game:knife-*", isTool: true, toolDurabilityCost: 12 }
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "miner-copper-helmet", quantity: 1  }
+}
+]
