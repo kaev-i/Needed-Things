@@ -13,18 +13,25 @@
 	
 	attackRange: 3,
 	attributes: {
-			itemlight: [33, 6, 18],
-			toolrackTransform: {
+			//itemlight: [33, 6, 18],
+		toolrackTransform: {
 			translation: { x: 0.5, y: 0.5, z: 0 },
 			origin: { x: 5, y: 5, z: 5 }
-	},
-	
-		
-		rackable: true,
-		handbook: {
-			groupBy: ["*-staff"] },
 		},
 	
+		rackable: true,
+		handbook: {
+			groupBy: ["*-staff"]
+		},
+	},
+	
+	"lightHsvByType": {
+		"*-wood-*": [ 33, 6, 18 ],
+		"*-copper-*": [ 33, 6, 18 ],
+		"*-iron-*": [ 33, 6, 18 ],
+		"*-steel-*": [ 33, 6, 18 ],
+		"*-titan-*": [ 33, 6, 18 ]
+	},
 			
 	statModifiersByType: {
 			"travelers-*-*": {
@@ -32,6 +39,7 @@
 				hungerrate: -0.2
 			}
 		},
+	
 	tool: "sword",
 	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "neededthings":["*"] },
 	renderAlphaTest: 0.25,

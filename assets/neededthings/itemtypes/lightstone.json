@@ -1,0 +1,50 @@
+{
+	code: "lightstone",
+		
+	//variantgroups: [
+	//	{ code: "metal", states: ["copper"] },
+	//],
+	
+	shape: { base: "item/lightstone" },
+	creativeinventory: { "general": ["*"], "items": ["*"], "neededthings":["*"] },
+	
+	
+	
+	lightHsv: [13, 1, 27],
+	maxstacksize: 128,
+	attributes: {
+		
+		
+		},
+		
+		
+		displaycaseable: true,
+		shelvable: false,
+		
+	
+		
+	
+	fpHandTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 1, y: 90, z: 0 },
+		scale: 1.67
+	},
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 150, y: -38, z: 0 },
+		origin: { x: 0.5, y: 0.1, z: 0.5 },
+		scale: 3.8
+	},
+	tpHandTransform: {
+		translation: { x: -0.93, y: -0.19, z: -0.77 },
+		rotation: { x: -48, y: -180, z: 23 },
+		origin: { x: 0.5, y: 0.12, z: 0.5 },
+		scale: 0.6
+	},
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 1.5
+	}
+}

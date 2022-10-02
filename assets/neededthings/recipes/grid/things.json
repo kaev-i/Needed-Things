@@ -1,0 +1,19 @@
+[
+{
+	ingredientPattern:
+	
+	"_S_,BQB,___",
+	
+	//requiresTrait: "miner","commoner",
+	
+	ingredients: {
+		"B": { type: "item", code: "neededthings:lightstone-bar-copper", quantity: 1 },
+		"S": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 6 },
+		"Q": { type: "item", code: "game:ore-quartz", quantity: 1 }
+		
+	},
+	width: 3,
+	height: 3,
+	output: { type: "item", code: "neededthings:lightstone", quantity: 1  }
+}
+]

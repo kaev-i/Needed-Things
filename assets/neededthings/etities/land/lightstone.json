@@ -1,0 +1,26 @@
+	code: "lightstone",
+	class: "EntityItem",
+	
+	client: { 
+	
+		shape: { base: "item/lightstone" },
+		
+	behaviors: [
+		{ code: "despawn", minSecond: 1200 }
+	]
+	},
+	
+	server: {
+		
+		behaviors: [
+		{ code: "despawn", minSecond: 1200 }
+		]
+		
+	}
+		
+	
+	
+	
+	
+		
+	

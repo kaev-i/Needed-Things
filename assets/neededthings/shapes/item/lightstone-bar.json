@@ -1,0 +1,45 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"copper32": "items/helmets/copper32",
+		"quartz": "items/helmets/quartz"
+	},
+	"elements": [
+		{
+			"name": "Cube",
+			"from": [ 5.5, 0.0, 6.0 ], 
+			"to": [ 5.5, 0.0, 7.0 ], 
+			"rotationOrigin": [ 8.0, 0.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#quartz", "uv": [ 0.0, 8.0, 0.5, 8.5 ], "glow": 200 },
+				"east": { "texture": "#quartz", "uv": [ 10.0, 13.0, 12.0, 13.5 ], "glow": 200 },
+				"south": { "texture": "#quartz", "uv": [ 2.0, 10.0, 2.5, 10.5 ], "glow": 200 },
+				"west": { "texture": "#quartz", "uv": [ 7.0, 5.0, 9.0, 5.5 ], "glow": 200 },
+				"up": { "texture": "#quartz", "uv": [ 5.0, 7.0, 5.5, 9.0 ], "glow": 200 },
+				"down": { "texture": "#quartz", "uv": [ 7.0, 2.0, 7.5, 4.0 ], "glow": 200 }
+			},
+			"children": [
+				{
+					"name": "Cube1",
+					"from": [ -1.0, 0.0, 0.0 ], 
+					"to": [ 0.0, 2.0, 3.0 ], 
+					"rotationOrigin": [ -1.0, 0.0, 1.0 ],
+					"faces": {
+						"north": { "texture": "#copper32", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"east": { "texture": "#copper32", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"south": { "texture": "#copper32", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"west": { "texture": "#copper32", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+						"up": { "texture": "#copper32", "uv": [ 0.0, 0.0, 1.0, 3.0 ] },
+						"down": { "texture": "#copper32", "uv": [ 0.0, 0.0, 1.0, 3.0 ] }
+					}
+				}
+			]
+		}
+	]}

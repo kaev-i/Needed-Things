@@ -17,6 +17,12 @@
 	"item-witch": "Ведьмин Колпак",
 	
 	//Fuel
-	"item-hitempfuel": "Высокотемпературное Топливо"
+	"item-hitempfuel": "Высокотемпературное Топливо",
+	
+	//Things
+	"block-toolmold-raw-lightstone-bar": "Форма для корпуса Светляка не Обоженная",
+	"block-toolmold-burned-lightstone-bar": "Форма для корпуса Светляка Обоженная",
+	"item-lightstone-bar-copper": "Корпус Светляка",
+	"item-lightstone": "Светляк"
 
 }

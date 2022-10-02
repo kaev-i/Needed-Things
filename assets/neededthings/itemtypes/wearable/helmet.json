@@ -35,18 +35,25 @@
 		},		
 	},	
 
-		
+	"lightHsvByType": {
+		"*-wood-*": [ 33, 6, 16 ],
+		"*-copper-*": [ 33, 6, 16 ],
+		"*-iron-*": [ 33, 6, 16 ],
+		"*-steel-*": [ 33, 6, 16 ],
+		"*-titan-*": [ 33, 6, 18 ]	
+	},
+	
 	textures: {
 		"seraph": { base: "game:block/transparent" }
 	},		
 		
-	miningspeedByType: {
+	/*miningspeedByType: {
 		"*-wood-*": { "soil": 2,"sand": 2,"gravel": 2,"stone": 2,"metal": 2,"ore": 2 },
 		"*-copper-*": { "soil": 3,"sand": 3,"gravel": 3,"stone": 3,"metal": 3,"ore": 3 },
 		"*-iron-*": { "soil": 4,"sand": 4,"gravel": 4,"stone": 4,"metal": 4,"ore": 4 },
 		"*-steel-*": { "soil": 7,"sand": 7,"gravel": 7,"stone": 7,"metal": 7,"ore": 7 },
 		"*-titan-*": { "soil": 9,"sand": 9,"gravel": 9,"stone": 9,"metal": 9,"ore": 9 },
-	},		
+	},	*/	
 	
 	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "neededthings":["*"] },
 	renderAlphaTest: 0.25,

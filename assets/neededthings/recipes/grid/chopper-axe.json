@@ -1,0 +1,21 @@
+{
+        ingredientPattern: "BH_,_A_,_C_",
+        ingredients: {
+            "B": { type: "item", code: "game:metalplate-*", allowedVariants: ["copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "silver", "gold", "meteoriciron", "steel" ], name: "blade" },
+            "H": { type: "item", code: "game:axehead-*", allowedVariants: ["copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "silver", "gold", "meteoriciron", "steel" ], name: "head" },
+            "A": { type: "item", code: "game:ingot-*", allowedVariants: ["copper", "blackbronze", "tinbronze", "bismuthbronze", "iron", "silver", "gold", "meteoriciron", "steel" ], name: "handle" },
+            "C": { type: "item", code: "game:plank-*" },
+        },
+        width: 3,
+        height: 3,
+        output: { 
+            type: "item", 
+            code: "chopper-axe",
+            attributes: {
+                blade: "{blade}",
+                head: "{head}",
+                handle: "{handle}",
+                crystal: "wood"
+            }
+        }
+    }

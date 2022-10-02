@@ -1,0 +1,21 @@
+{
+	ingredient: { 
+	type: "item",
+	code: "game:ingot-*",
+	name: "metal",
+	allowedVariants: ["copper"] 
+	},
+	
+	pattern: [[
+		"#_#_#_#_",
+		"_#_#_#_#",
+		"#_#_#_#_",
+		"_#_#_#_#",
+		"#_#_#_#_",
+		"_#_#_#_#",
+		"#_#_#_#_",
+		"_#_#_#_#",
+	]],
+	name: "32 Light Stone Bar",
+	output: { type: "item", code: "neededthings:lightstone-bar-copper", stacksize: 32  }
+}

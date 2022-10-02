@@ -1,0 +1,192 @@
+{	
+	code: "chopper-axe",
+	class: "ItemComposittool",
+	
+	
+	/*variantgroups: [
+		{ code: "blade",  "states": ["copper","tinbronze","bismuthbronze","blackbronze","gold","silver","iron","steel","meteoriciron","titanium"] }, //Blade
+		{ code: "head",  "states": ["copper","tinbronze","bismuthbronze","blackbronze","gold","silver","iron","steel","meteoriciron","titanium"] }, //Head
+		{ code: "handle", "states": ["wood","copper","tinbronze","bismuthbronze","blackbronze","gold","silver","iron","steel","meteoriciron","titanium"] }, //Handle
+		//{ code: "subtype3", "states": ["leather","wood"] }, //Handle-diff
+		{ code: "crystal", "states": ["quartz","wood32"] }, //Crystal
+	],*/
+	
+	shape: { base: "item/tool/chopper-axe" }, //-{type}-{subtype}-{subtype2}-{subtype3}-{subtype4}
+	"textures": {
+		"wood": { "base": "items/helmets/wood32" },
+		"copper": { "base": "game:block/metal/plate/copper" },
+		"tinbronze": { "base": "game:block/metal/plate/tinbronze" },
+		"bismuthbronze": { "base": "game:block/metal/plate/bismuthbronze" },
+		"blackbronze": { "base": "game:block/metal/plate/blackbronze" },
+		"gold": { "base": "game:block/metal/plate/gold" },
+		"silver": { "base": "game:block/metal/plate/silver" },
+		"iron": { "base": "game:block/metal/plate/iron" },
+		"steel": { "base": "game:block/metal/plate/steel" },
+		"meteoriciron": { "base": "game:block/metal/plate/meteoriciron" },
+		"titanium": { "base": "game:block/metal/plate/titanium" },
+		"quartz": { "base": "items/helmets/quartz" }
+    /*"blade": { "base": "game:block/metal/plate/{blade}" },
+	//"head": { "base": "game:block/metal/plate/{head}" },
+	//"handle": { "base": "game:block/metal/plate/{handle}" },
+	"crystal": { "base": "neededthings:items/helmets/{crystal}" }*/
+  },
+	heldTpHitAnimation: "breaktool",
+	
+	tooltier: 2,
+	attackRange: 3,
+	
+	miningspeed: {
+	"wood": 4,
+	"plant": 2.6,
+	"leaves": 2.2
+	},        
+
+	attributes: {
+		
+		
+		compositeHandleDurability:
+		{
+		"copper":350,
+		"tinbronze":380,
+        "bismuthbronze":400,
+        "blackbronze":450,
+        "gold":150,
+        "silver":150,
+        "iron":550,
+        "meteoriciron":650,
+        "steel":1100,
+		"titanium":2800,
+		"wood":250,
+		},
+		compositeHeadModifier:
+		{
+		"copper":1,
+		"tinbronze":1.3,
+        "bismuthbronze":1.5,
+        "blackbronze":1.6,
+        "gold":1.6,
+        "silver":1.5,
+        "iron":1.8,
+        "meteoriciron":1.9,
+        "steel":2,
+		"titanium":1.3,	
+		},
+		
+		compositeBladeAttack:
+		{
+		"copper":3,
+		"tinbronze":3.5,
+        "bismuthbronze":3.6,
+        "blackbronze":3.7,
+        "gold":2,
+        "silver":2,
+        "iron":5,
+        "meteoriciron":5.5,
+        "steel":6.9,
+		"titanium":8.5,
+		
+		},
+			//itemlight: [33, 6, 18],
+			toolrackTransform: {
+			translation: { x: 0, y: 0.8, z: 0 },
+			origin: { x: 0.5, y: 0.5, z: 0.5 },
+			rotation: { x: 0, y: -90, z: 0 },
+			scale: 2
+	},
+	
+	
+		
+		rackable: true,
+		handbook: {
+			groupBy: ["chopper-axe"] },
+		},
+	
+			
+	statModifiersBySubType: {
+			"chopper-axe-*-copper-*-*-*": {
+				walkSpeed: 0.5,
+				hungerrate: 0.0,
+			}
+		},
+	tool: "axe",
+	
+	
+	creativeinventory: {  },
+	creativeinventoryStacks: 
+		[
+			{
+				tabs: [ "general", "items", "neededthings" ],
+				stacks: [
+					{ type: "item", code: "chopper-axe", attributes: { blade: "copper", head: "copper", handle: "iron", crystal: "wood" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "meteoriciron", head: "copper", handle: "gold", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "blackbronze", head: "copper", handle: "titanium", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "meteoriciron", head: "steel", handle: "silver", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "tinbronze", head: "steel", handle: "copper", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "bismuthbronze", head: "gold", handle: "wood", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "iron", head: "gold", handle: "wood", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "titanium", head: "gold", handle: "bismuthbronze", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "silver", head: "gold", handle: "meteoriciron", crystal: "quartz" } },
+					{ type: "item", code: "chopper-axe", attributes: { blade: "gold", head: "blackbronze", handle: "titanium", crystal: "quartz" } }
+				]
+			}
+		]
+	,
+	
+	renderAlphaTest: 0.25,
+	
+	damagedby: ["blockbreaking", "attacking"],
+			
+	/*durabilityByType: {
+		"chopper-axe-*-copper-wood-*": 350, 
+		//"*-wood-*": 350,
+		"*-copper-*": 650,
+		"*-bismuthbronze-*": 750,
+		"*-blackbronze-*": 800,
+		"*-gold-*": 150,
+		"*-silver-*": 175,
+		"*-iron-*": 1500,
+		"*-meteoriciron-*": 2300,
+		"*-steel-*": 3500,
+		"*-titanium-*": 7500
+	},*/
+	
+		/*attackpowerbytype: {
+		"chopper-axe-iron-copper-*": 5,
+		//"*-wood-*": 4,
+		"*-copper-*": 6,
+		"*-tinbronze-*": 8,
+		"*-bismuthbronze-*": 8,
+		"*-blackbronze-*": 8.5,
+		"*-gold-*": 1.5,
+		"*-silver-*": 1.5,
+		"*-iron-*": 9,
+		"*-steel-*": 13,
+		"*-titanium-*": 17,
+	},*/
+	
+		
+	guiTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -89, y: 47, z: 33 },
+		origin: { x: 0.59, y: 0, z: 0.44 },
+		scale: 1.75
+	},
+		fpHandTransform: {
+		translation: { x: -0.5, y: 0.18, z: -1.43 },
+		rotation: { x: 37, y: 1, z: 68 },
+		scale: 6
+	},
+	
+	groundTransform: {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 3.4
+	},
+		tpHandTransform: {
+		translation: { x: 0.55, y: -0.72, z: -0.2 },
+		rotation: { x: -78, y: 180, z: -180 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 0.9
+	}
+}

@@ -17,7 +17,11 @@
 	"item-witch": "The Witch's Hat",
 
 	//Fuel
-	"item-hitempfuel": "High Temperature Fuel"
+	"item-hitempfuel": "High Temperature Fuel",
 	
-	
+	//Things
+	"block-toolmold-raw-lightstone-bar": "Raw Mold Light Stone Bar",
+	"block-toolmold-burned-lightstone-bar": "Burned Mold Light Stone Bar",
+	"item-lightstone-bar-copper": "Light Stone Bar",
+	"item-lightstone": "Lightstone"
 }

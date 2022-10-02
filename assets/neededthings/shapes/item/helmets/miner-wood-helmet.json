@@ -20,12 +20,12 @@
 			"to": [ 2.5, 3.5, 2.0 ], 
 			"rotationOrigin": [ 3.0, 3.0, 3.0 ],
 			"faces": {
-				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-				"up": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
-				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+				"north": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"east": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"south": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"west": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"up": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"down": { "texture": "#black", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
 			},
 			"children": [
 				{
@@ -52,7 +52,7 @@
 						"south": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 3.0 ], "autoUv": false },
 						"west": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 3.0 ], "autoUv": false },
 						"up": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "autoUv": false },
-						"down": { "texture": "#null", "uv": [ 0.0, 0.0, 7.0, 7.0 ] }
+						"down": { "texture": "#black", "uv": [ 0.0, 0.0, 7.0, 7.0 ] }
 					}
 				},
 				{
@@ -66,7 +66,7 @@
 						"south": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
 						"west": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 0.5 ], "autoUv": false },
 						"up": { "texture": "#wood32", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "autoUv": false },
-						"down": { "texture": "#null", "uv": [ 0.0, 0.0, 6.0, 6.0 ] }
+						"down": { "texture": "#black", "uv": [ 0.0, 0.0, 6.0, 6.0 ] }
 					}
 				},
 				{
@@ -76,7 +76,7 @@
 					"rotationOrigin": [ -3.0, 1.0, 0.0 ],
 					"faces": {
 						"north": { "texture": "#black", "uv": [ 0.0, 0.0, 4.0, 8.0 ], "autoUv": false },
-						"east": { "texture": "#null", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"east": { "texture": "#black", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
 						"south": { "texture": "#black", "uv": [ 0.0, 8.0, 4.0, 16.0 ], "autoUv": false },
 						"west": { "texture": "#quartz", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "glow": 255, "autoUv": false },
 						"up": { "texture": "#black", "uv": [ 0.0, 0.0, 4.0, 8.0 ], "autoUv": false },
