@@ -8,10 +8,10 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"graniteface32": "D:/Vintage/Needed Things 1.0.2+/assets/neededthings/textures/items/helmets/graniteface32",
-		"black": "D:/Vintage/Needed Things 1.0.2+/assets/neededthings/textures/items/helmets/black",
-		"graniteP32": "D:/Vintage/Needed Things 1.0.2+/assets/neededthings/textures/items/helmets/graniteP32",
-		"wood32": "D:/Vintage/Needed Things 1.0.2+/assets/neededthings/textures/items/helmets/wood32"
+		"graniteface32": "items/helmets/graniteface32",
+		"black": "items/helmets/black",
+		"graniteP32": "items/helmets/graniteP32",
+		"wood32": "items/helmets/wood32"
 	},
 	"elements": [
 		{

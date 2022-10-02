@@ -11,12 +11,9 @@
   "resistance": 1.5,
   "maxStackSize": 64,
   "lightAbsorption": 0,
-  "textures": {
-      "all": { "base": "game:block/clay/blueclay" },
-   
-  },
+    
   "shape": {
-    "base": "block/"
+    "base": "block/toolbench"
     
   },
   "sounds": {
