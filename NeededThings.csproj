@@ -25,12 +25,9 @@
 		</Otherwise>
 	</Choose>
 
-	<PropertyGroup>
-		<GameFolder>D:\games\Vintagestory</GameFolder>
-		<GameDataFolder>C:\Users\buldog\AppData\Roaming\VintagestoryData</GameDataFolder>
-	</PropertyGroup>
+	<Import Project="User.props"/>
 
-	<ItemGroup Label="Game Refs">
+	<ItemGroup>
 		<Reference Include="$(GameFolder)\*.dll">
 			<Private>false</Private>
 		</Reference>

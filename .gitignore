@@ -6,3 +6,5 @@
 /.vs
 /*.csproj.user
 /*.sln
+
+/User.props
