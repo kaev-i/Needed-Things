@@ -26,8 +26,8 @@
 	</Choose>
 
 	<PropertyGroup>
-		<GameFolder>C:\Users\dark\AppData\Roaming\Vintagestory\1.17.4</GameFolder>
-		<GameDataFolder>C:\Users\dark\AppData\Roaming\VintagestoryData</GameDataFolder>
+		<GameFolder>D:\games\Vintagestory</GameFolder>
+		<GameDataFolder>C:\Users\buldog\AppData\Roaming\VintagestoryData</GameDataFolder>
 	</PropertyGroup>
 
 	<ItemGroup Label="Game Refs">
