@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "Launch Client": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\Vintagestory.exe",
+      "commandLineArgs": "--addModPath $(ProjectDir)$(OutputPath).. --addOrigin $(ProjectDir)assets --tracelog",
+      "workingDirectory": "$(GameFolder)"
+    },
+    "Launch Client with Test World": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\Vintagestory.exe",
+      "commandLineArgs": "--playStyle \"preset-surviveandbuild\" --openWorld \"$(ProjectName) Test World\" --addModPath $(ProjectDir)$(OutputPath).. --addOrigin $(ProjectDir)assets --tracelog",
+      "workingDirectory": "$(GameFolder)"
+    },
+    "Launch Server": {
+      "commandName": "Executable",
+      "executablePath": "$(GameFolder)\\VintagestoryServer.exe",
+      "commandLineArgs": "--addModPath $(ProjectDir)$(OutputPath).. --addOrigin $(ProjectDir)assets --tracelog",
+      "workingDirectory": "$(GameFolder)"
+    }
+  }
+}

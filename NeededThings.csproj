@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net461</TargetFramework>
+		<Configurations>Debug;Release;Publish</Configurations>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>CS1591</NoWarn>
+		<WarningLevel>4</WarningLevel>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+	<Choose>
+		<When Condition=" '$(Configuration)' == 'Debug' ">
+			<PropertyGroup>
+				<DebugSymbols>true</DebugSymbols>
+				<DebugType>full</DebugType>
+				<Optimize>false</Optimize>
+			</PropertyGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<DebugSymbols>true</DebugSymbols>
+				<DebugType>pdbonly</DebugType>
+				<Optimize>true</Optimize>
+			</PropertyGroup>
+		</Otherwise>
+	</Choose>
+
+	<PropertyGroup>
+		<GameFolder>C:\Users\dark\AppData\Roaming\Vintagestory\1.17.4</GameFolder>
+		<GameDataFolder>C:\Users\dark\AppData\Roaming\VintagestoryData</GameDataFolder>
+	</PropertyGroup>
+
+	<ItemGroup Label="Game Refs">
+		<Reference Include="$(GameFolder)\*.dll">
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Lib\*.dll">
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Mods\*.dll">
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="modinfo.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<Target Name="ZipMod" AfterTargets="PostBuildEvent" Condition=" '$(Configuration)' == 'Publish' ">
+		<ItemGroup>
+			<Res Include="assets/**" />
+		</ItemGroup>
+		<Copy SourceFiles="@(Res)" DestinationFolder="$(OutputPath)/assets/%(RecursiveDir)" />
+
+		<Message Text="$(OutputPath).." Importance="high" />
+		<MakeDir Directories="releases" />
+		<ZipDirectory DestinationFile="releases/$(TargetName).zip" SourceDirectory="$(OutputPath)" Overwrite="true" />
+	</Target>
+</Project>

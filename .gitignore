@@ -1,0 +1,8 @@
+/ignore
+/bin
+/obj
+/mods
+/releases
+/.vs
+/*.csproj.user
+/*.sln
