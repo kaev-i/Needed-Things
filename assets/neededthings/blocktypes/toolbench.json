@@ -1,6 +1,7 @@
 {
   "code": "toolbench",
-  
+  "class": "BlockToolBench",
+
   "blockmaterial": "Stone",
   "creativeinventory": {
     "general": [ "*" ],
@@ -11,22 +12,22 @@
   "resistance": 1.5,
   "maxStackSize": 64,
   "lightAbsorption": 0,
-    
+
   "shape": {
     "base": "block/toolbench"
-    
+
   },
   "sounds": {
     "walk": "walk/stone"
   },
- 
+
   "sideopaque": {
     "all": false
   },
   "sidesolid": {
     "all": false
-  },
- /* "guiTransformByType": {
+  }
+  /* "guiTransformByType": {
     "*-anvil": {
       "translation": {
         "x": 0,
