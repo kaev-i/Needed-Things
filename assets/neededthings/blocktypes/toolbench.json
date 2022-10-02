@@ -12,7 +12,7 @@
   "maxStackSize": 64,
   "lightAbsorption": 0,
   "textures": {
-    :  "all": { "base": "game:block/clay/blueclay" },
+      "all": { "base": "game:block/clay/blueclay" },
    
   },
   "shape": {
